@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans&display=swap");
+:root {
+  --primary-color: #b6cce2;
+  --secondary-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: "Amaranth", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  margin: 0;
+}
+
+.container {
+  width: 60vw;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 2px solid #fff;
+  font-size: 5rem;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #3bceff;
+  outline: 0;
+}
+
+.form-control-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.171875rem;
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+  padding: 0.375rem 0.5rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #222;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.todos {
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.todo {
+  border: 2px solid #f4f4f4;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.delete {
+  justify-self: end;
+  width: 10%;
+}
+
+button {
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: red;
+  outline: none;
+}
+
+.sidebar {
+  background-color: #87b3df;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  border: 2px dotted #222;
+}
+
+.sidebar h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.sidebar ul {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+  padding: 0rem 2rem;
+}
+i {
+  color: #f4f4f4;
+}
