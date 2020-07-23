@@ -32,7 +32,7 @@ h2 {
 }
 
 .form-control {
-  display: block;
+  display: block !important;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -102,14 +102,14 @@ button {
 
 button:hover {
   cursor: pointer;
-  background: red;
+  background: rgb(248, 160, 160);
   outline: none;
 }
 
 .sidebar {
   background-color: #87b3df;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   display: block;
   border: 2px dotted #222;
@@ -128,5 +128,14 @@ button:hover {
   padding: 0rem 2rem;
 }
 i {
-  color: #f4f4f4;
+  color: #000;
+  margin-left: 10px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.red {
+  background-color: red !important;
 }
